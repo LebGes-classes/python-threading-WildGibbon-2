@@ -82,13 +82,15 @@
 ## Пример
 
 ```python
-import threading
+import threads
 import time
+
 
 def task(name):
     for i in range(3):
         print(f"{name}: {i}")
         time.sleep(1)
+
 
 # создаём потоки
 t1 = threading.Thread(target=task, args=("Поток 1",))
